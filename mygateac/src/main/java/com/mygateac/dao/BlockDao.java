@@ -39,6 +39,9 @@ public class BlockDao {
 				flatOwnerBo = new FlatOwnerBo();
 				flatOwnerBo.setFlat(flatBo);
 				flatOwnerBo.setOwner(ownerBo);
+				
+				
+	
 				return flatOwnerBo;
 			}
 
