@@ -1,0 +1,20 @@
+server:
+  port: 6060
+    servlet:    context-path: /UHIP
+    
+#dataBaseDetails
+spring:  datasource:    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: ramesh
+    password: rameshc    driver-class-name: oracle.jdbc.driver.OracleDriver    
+#orm dialect
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+            hibernate:      ddl-auto: update
+          show-sql: true
+    
+uhip1:
+  uhipProps:
+    InvalidCredentials:  Invalid Credentials,
+    AccountDeactivate: Your account is deactivated
